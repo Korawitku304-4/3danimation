@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://ytfon7smpupe"]
+
+[ext_resource type="Script" uid="uid://svkgt1hgoy67" path="res://assets/main.gd" id="1_06ig3"]
+[ext_resource type="PackedScene" uid="uid://casocftt2cgwx" path="res://assets/david.tscn" id="1_db5cl"]
+[ext_resource type="PackedScene" uid="uid://cldapufvajjp0" path="res://assets/godot_grassy_forest.glb" id="3_2d37k"]
+
+[sub_resource type="Environment" id="Environment_p5viw"]
+background_color = Color(0.25882354, 0.54901963, 0.49411765, 1)
+background_energy_multiplier = 2.54
+ambient_light_color = Color(1, 1, 1, 1)
+
+[node name="Node3D" type="Node3D" unique_id=78926408]
+script = ExtResource("1_06ig3")
+
+[node name="Walking" parent="." unique_id=1502337004 instance=ExtResource("1_db5cl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5073998, 0, 0)
+
+[node name="Walking2" parent="." unique_id=1184814304 instance=ExtResource("1_db5cl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.156903, 0, 0)
+
+[node name="Walking3" parent="." unique_id=911808116 instance=ExtResource("1_db5cl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.7571974, 0, 0)
+
+[node name="Walking4" parent="." unique_id=153049251 instance=ExtResource("1_db5cl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4562993, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1004133800]
+transform = Transform3D(1, 0, 0, 0, 0.9766703, 0.21474431, 0, -0.21474431, 0.9766703, 0.22121906, 3.0000553, 4.5249176)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=601386919]
+transform = Transform3D(-0.025855482, 0, -0.99966574, 0, 1, 0, 0.99966574, 0, -0.025855482, -9.521125, 3.5926208, 5.5394287)
+
+[node name="godot_grassy_forest" parent="." unique_id=409443702 instance=ExtResource("3_2d37k")]
+transform = Transform3D(2.258323, 0, 0, 0, 1.7483199, 0, 0, 0, 2.9906144, -0.03145218, -0.16697693, 5.4843483)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=29140940]
+environment = SubResource("Environment_p5viw")

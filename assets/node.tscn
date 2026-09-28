@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://6tpprasa2r57"]
+
+[ext_resource type="PackedScene" uid="uid://bcsxgaqvhpbp0" path="res://assets/Walking.fbx" id="1_kruyh"]
+
+[node name="Node3D" type="Node3D" unique_id=260387633]
+
+[node name="Walking" parent="." unique_id=1502337004 instance=ExtResource("1_kruyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.04327011, 0, -0.102843046)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=2008629748]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.3281724, 3.6889782)
